@@ -1,4 +1,4 @@
-const connection = require('../data/db');
+const connection = Require('../data/db');
 
 // INDEX
 const index = (req, res) => {
@@ -24,4 +24,15 @@ const show = (req, res) => {
     });
 };
 
-module.exports = { index, show };
+// DESTROY
+const destroy = (req, res) => {
+    const id = req.params.id;
+    connection.query("DELETE FROM posts WHERE id = ?", [id], (err, result) => {
+        if (err) {
+            return res.status(500).json({ error: "Errore nella query: " + err });
+        }
+        res.status(204).send(); // Nessun contenuto
+    });
+};
+
+module.exports = { index, show, destroy };
