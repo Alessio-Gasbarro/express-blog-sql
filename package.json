@@ -1,0 +1,24 @@
+{
+  "name": "express-blog-sql",
+  "version": "1.0.0",
+  "description": "Esercizio di oggi: express-blog-sql",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "watch": "node --watch app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alessio-Gasbarro/express-blog-sql.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alessio-Gasbarro/express-blog-sql/issues"
+  },
+  "homepage": "https://github.com/Alessio-Gasbarro/express-blog-sql#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
