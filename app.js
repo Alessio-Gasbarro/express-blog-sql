@@ -1,8 +1,8 @@
-const express = Require('express');
+const express = require('express');
 const app = express();
 const port = 3000;
 //Importo router
-const postsRouter = Require("./router/posts.js");
+const postsRouter = require("./router/posts.js");
 
 app.use(express.static("public"));
 app.use(express.json());
